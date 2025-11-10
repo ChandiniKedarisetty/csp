@@ -1,0 +1,4 @@
+# This folder is for storing images and other assets
+# Add your images here and reference them in components like:
+# import foodImage from '../assets/food-image.jpg'
+

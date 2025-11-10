@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import './custom.css';
+
+@layer base {
+  /* Use a slightly more professional but readable font family */
+  body {
+    @apply bg-gradient-to-br from-blue-50 via-green-50 to-yellow-50 min-h-screen;
+    font-family: 'Poppins', sans-serif; /* Recommended for a modern, clean look. (Assume Poppins is imported/available) */
+    /* Fallback to Arial/Sans-serif */
+  }
+}
+
+@layer components {
+  /* Updated Card component for better padding and hover effects */
+  .card {
+    @apply bg-white rounded-2xl shadow-xl p-6 transition-all duration-300 ease-in-out border border-gray-100 hover:shadow-2xl hover:scale-[1.01];
+  }
+  
+  /* Section title for better consistency */
+  .section-title {
+    @apply text-4xl sm:text-5xl font-extrabold text-center mb-10 pb-2 
+           bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent 
+           border-b-4 border-dashed border-green-200; /* Added a dashed border for fun, professional separation */
+  }
+
+  /* Navigation Link Style */
+  .nav-link {
+    @apply text-lg font-semibold text-white px-3 py-1 rounded-full hover:bg-white hover:text-green-600 transition-colors duration-200;
+  }
+}
