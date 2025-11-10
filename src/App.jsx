@@ -1,4 +1,4 @@
-gitimport React from 'react'
+import React from 'react'
 import Header from './components/Header'
 import FoodGroups from './components/FoodGroups'
 import HealthyPlate from './components/HealthyPlate'
